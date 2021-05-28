@@ -61,7 +61,7 @@
 		$mencoes = $_POST['mencoes'];
 
 		$referencia1 = $_POST['referencia1'];
-		$refernciaCargo1 = $_POST['referenciaCargo1'];
+		$referenciaCargo1 = $_POST['referenciaCargo1'];
 		$referenciaTelefone1 = $_POST['referenciaTelefone1'];
 
 		$referencia2 = $_POST['referencia2'];
@@ -149,7 +149,7 @@
 						<!--Esquerda-->
 						<div class="col-lg-4 left">
 							<!--FOTO PERFIL-->
-							<img src="'.$dir.$new_name.'" class="image">
+							<img src="http://pedron.profrodolfo.com.br/licoes/GeradorDeCurriculos%20/'.$dir.$new_name.'" class="image">
 						</div>
 						<div class="col-lg-7">
 							<!--NOME-->
@@ -218,7 +218,7 @@
 							<!--REFENRECIAS-->
 							<h5 class="text-danger"><em><strong>'.$referencia1.'</strong></em></h5>
 							<!--CARGO-->
-							<h5>'.$funcaoExperiencia1.'</h5>
+							<h5>'.$referenciaCargo1.'</h5>
 							<!--CONTATO-->
 							<p>'.$referenciaTelefone1.'</p>
 
@@ -226,7 +226,7 @@
 							<!--REFENRECIAS 2-->
 							<h5 class="text-danger"><em><strong>'.$referencia2.'</strong></em></h5>
 							<!--CARGO-->
-							<h5>'.$funcaoExperiencia2.'</h5>
+							<h5>'.$referenciaCargo2.'</h5>
 							<!--CONTATO-->
 							<p>'.$referenciaTelefone2.'</p>
 							</div>
@@ -325,10 +325,10 @@
 		fclose($arquivo);
 
 		echo "<div class='col-lg-12' align='center'><h1 class='text-seccess'> Currículo salvo com sucesso!</h1></div>";
-	  echo "<div class='col-lg-12' align='center'><a href='".$a."' class='btn btn-primary' download>Baixe aqui seu Currículo </a></div><br>";
+	  	echo "<div class='col-lg-12' align='center'><a href='http://pedron.profrodolfo.com.br/licoes/GeradorDeCurriculos%20/".$a."' class='btn btn-primary'>Veja aqui seu Currículo</a> <a href='".$a."' class='btn btn-primary' download>Baixe aqui seu Currículo </a></div><br>";
 	}
 	?>
-
+<a href=""></a>
 	<div class="col-lg-10 offset-lg-1 border-bottom border-primary" align="center">
 		<h3>DADOS PESSOAIS</h3>
 	</div>
